@@ -18,6 +18,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - name: Run headless test
-        uses: coactions/setup-xvfb@v1
+        uses: GabrielBB/xvfb-action@v1.0
         with:
           run: npm test
